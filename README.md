@@ -3,6 +3,9 @@
 📌 Project Overview
 This project performs an in-depth exploratory data analysis (EDA) on sales and product data from Zepto, a rapid grocery delivery service. The goal is to uncover business insights regarding sales trends, product performance, delivery efficiency across various cities, and customer purchasing behaviors using Python's powerful data analysis and visualization libraries.
 
+<img width="1104" height="889" alt="image" src="https://github.com/user-attachments/assets/d5112c92-67a8-478c-87ed-ade8368adc87" />
+
+
 🛠️ Tools & Technologies Used
 Data Manipulation & Cleaning: pandas, numpy
 
@@ -75,6 +78,6 @@ jupyter notebook project_code.ipynb
 Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
 
 ✨ Author
-Deepak Shukla * GitHub: @yourusername
+Deepak Shukla * GitHub: @Deepak7199
 
-LinkedIn: Your LinkedIn Profile
+LinkedIn:https://www.linkedin.com/in/deepak-shukla-30b6492a9/
