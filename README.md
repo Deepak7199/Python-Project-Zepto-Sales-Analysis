@@ -1,131 +1,80 @@
-# Python-Project-Zepto-Sales-Analysis
+🛒 Zepto Sales & Products Data Analysis
 
-📊 Sales Data Analysis & Visualization Project
 📌 Project Overview
-
-This project focuses on analyzing and visualizing sales data to extract meaningful business insights.
-Using Python, Pandas, Matplotlib, and Seaborn, various visualizations are created to understand sales performance across products, cities, categories, and time periods.
-
-The goal is to make the data easy to understand, visually appealing, and decision-friendly.
+This project performs an in-depth exploratory data analysis (EDA) on sales and product data from Zepto, a rapid grocery delivery service. The goal is to uncover business insights regarding sales trends, product performance, delivery efficiency across various cities, and customer purchasing behaviors using Python's powerful data analysis and visualization libraries.
 
 🛠️ Tools & Technologies Used
+Data Manipulation & Cleaning: pandas, numpy
 
-Python
+Data Visualization: matplotlib, seaborn
 
-Pandas – Data cleaning & aggregation
+Environment: Jupyter Notebook
 
-Matplotlib – Basic plotting
+📂 Dataset Information
+The analysis is based on two primary datasets:
 
-Seaborn – Advanced and aesthetic visualizations
+zepto_products.csv: Contains inventory details (38 unique products).
 
-Jupyter Notebook / VS Code
+product_id, product_name, category, base_price
 
-📂 Dataset Description
+Categories include: Fruits & Vegetables, Dairy & Eggs, Personal Care, Household Essentials, Beverages, and Munchies.
 
-The dataset contains sales-related information such as:
+zepto_sales.csv: Contains over 220,000 transaction records for the year 2024.
 
-City
+order_id, order_date, product_id, quantity, city, delivery_status, customer_id, delivery_time_mins, total_amount
 
-Product
+🧹 Data Cleaning & Preprocessing
+To ensure data quality and accuracy, the following data cleaning steps were executed using Pandas and NumPy:
 
-Product Category
+Handling Missing Values: Dropped rows with null values in city and delivery_status. Imputed missing values in delivery_time_mins using the overall mean delivery time (~26 mins).
 
-Total Sales Amount
+Removing Duplicates: Identified and dropped 216 duplicate order records.
 
-Order Date
+Data Type Conversion: Converted the order_date column from an object (string) data type to a proper datetime format for time-series analysis.
 
-Delivery Time
+📊 Exploratory Data Analysis (EDA)
+The project explores the data through various aggregations and visualizations:
 
-The data is cleaned and aggregated before visualization.
+Top Performing Products: Bar charts displaying the top 5 products generating the highest revenue.
 
-📈 Visualizations Created
-1️⃣ Top 5 Products by Sales Amount
+City-wise Sales Distribution: Analyzed total sales volume across major Indian cities (Mumbai, Bangalore, Delhi, Hyderabad, Pune, etc.).
 
-Chart Type: Bar Chart
+Delivery Time Analytics: Calculated and compared average delivery times across different cities.
 
-Purpose: Identify best-selling products
+Monthly Sales Trends: Tracked revenue generation over the 12 months of 2024 to identify peak sales periods.
 
-Insight: Helps understand which products contribute most to revenue
+Category Insights: Grouped sales data by product category to determine which segments drive the most revenue.
 
-2️⃣ Total Sales by City
+💡 Key Insights
+Top Cities: Mumbai and Bangalore generated the highest sales revenue by a significant margin.
 
-Chart Type: Bar Chart / Heatmap
+Top Revenue Categories: Personal Care and Dairy & Eggs emerged as the highest-grossing categories.
 
-Purpose: Compare city-wise performance
+Bestselling Products: Non-grocery items like Handwash, Detergent 1kg, and Toilet Paper, along with Paneer 200g, dominated the total sales volume.
 
-Insight: Highlights top-performing and low-performing cities
+Delivery Efficiency: The average delivery time across all orders and cities remained highly consistent at roughly 26 minutes.
 
-3️⃣ Monthly Sales Trend
+🚀 How to Run the Project
+Clone this repository:
 
-Chart Type: Line Chart
+Bash
+git clone https://github.com/yourusername/zepto-data-analysis.git
+Navigate to the project directory:
 
-Purpose: Track sales performance over time
+Bash
+cd zepto-data-analysis
+Install the required dependencies:
 
-Insight: Identifies seasonal trends and growth/decline patterns
+Bash
+pip install pandas numpy matplotlib seaborn
+Open the Jupyter Notebook to view the code and visualizations:
 
-4️⃣ Sales by Product Category
+Bash
+jupyter notebook project_code.ipynb
+🤝 Contributing
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
 
-Chart Type: Pie Chart
+✨ Author
+Deepak Shukla * GitHub: @yourusername
 
-Purpose: Show sales distribution across categories
-
-Insight: Helps understand which category dominates overall sales
-
-5️⃣ Delivery Time vs City
-
-Chart Type: Heatmap / Bar Chart
-
-Purpose: Analyze delivery performance by city
-
-Insight: Identifies cities with faster or slower deliveries
-
-🔥 Heatmap Example: City vs Sales
-
-Darker colors represent higher sales
-
-Lighter colors represent lower sales
-
-Makes it easy to visually compare city performance at a glance
-
-📌 Key Insights
-
-Certain cities (e.g., Mumbai, Bangalore) generate significantly higher sales
-
-Monthly sales show noticeable trends instead of random fluctuations
-
-A few product categories contribute most of the total revenue
-
-Heatmaps provide quick visual comparison without reading numbers
-
-▶️ How to Run the Project
-
-Clone the repository
-
-git clone https://github.com/your-username/sales-data-visualization.git
-
-Install required libraries
-
-pip install pandas matplotlib seaborn
-
-Open the notebook or Python file and run the cells
-
-📌 Future Improvements
-
-Add interactive dashboards using Streamlit
-
-Include profit analysis
-
-Add predictive sales forecasting
-
-Improve UI themes and palettes
-
-🙌 Conclusion
-
-This project demonstrates how data visualization transforms raw data into actionable insights.
-It is suitable for data analysis portfolios, academic projects, and beginner-to-intermediate learning.
-
-👤 Author
-
-Deepak Shukla
-📍 Data Analysis & Visualization Project
-📅 2026
+LinkedIn: Your LinkedIn Profile
