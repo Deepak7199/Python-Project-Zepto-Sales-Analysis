@@ -6,6 +6,7 @@ This project performs an in-depth exploratory data analysis (EDA) on sales and p
 <img width="1104" height="889" alt="image" src="https://github.com/user-attachments/assets/d5112c92-67a8-478c-87ed-ade8368adc87" />
 
 
+
 🛠️ Tools & Technologies Used
 Data Manipulation & Cleaning: pandas, numpy
 
@@ -26,6 +27,9 @@ zepto_sales.csv: Contains over 220,000 transaction records for the year 2024.
 
 order_id, order_date, product_id, quantity, city, delivery_status, customer_id, delivery_time_mins, total_amount
 
+<img width="606" height="647" alt="image" src="https://github.com/user-attachments/assets/a57b5f68-40f5-41ef-9ca3-2826241f3d6f" />
+
+
 🧹 Data Cleaning & Preprocessing
 To ensure data quality and accuracy, the following data cleaning steps were executed using Pandas and NumPy:
 
@@ -34,6 +38,9 @@ Handling Missing Values: Dropped rows with null values in city and delivery_stat
 Removing Duplicates: Identified and dropped 216 duplicate order records.
 
 Data Type Conversion: Converted the order_date column from an object (string) data type to a proper datetime format for time-series analysis.
+
+<img width="455" height="876" alt="image" src="https://github.com/user-attachments/assets/b5db5848-1604-4752-9b2c-bd019022b609" />
+
 
 📊 Exploratory Data Analysis (EDA)
 The project explores the data through various aggregations and visualizations:
